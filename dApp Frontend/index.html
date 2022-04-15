@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>dApp InterFace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="icon" href="assets/crona.webp">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+
+
+
+
+</head>
+
+
+
+<body>
+    <!--Navbar yapısının tanımlanması /Burada renk ve boyut hatası var   -->
+    <nav class="navbar navbar-expand-lg navbar-light navBarListMain ">
+        <img src="assets/logo.webp" alt="" class="src">
+        <i class="fal fa-question-circle"></i>
+        <div class="collapse navbar-collapse  " id="navbarNav ">
+            <div class="navBarList">
+                <ul class="navBarListull">
+                    <li class="navBarListlii"><a href="#home">Swap</a></li>
+                    <li class="navBarListlii"><a href="#news">Liquidty</a></li>
+                    <li class="navBarListlii"><a href="#contact">Pool</a></li>
+
+
+
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="connectWallett"><a href="#contact">Connect Wallet</a></div>
+       
+    </nav>
+
+
+
+
+
+
+
+    <!--Orta alan yapısı  -->
+
+    <div class="container mainArea">
+        <div class="specialList">
+            <ul class="ull">
+                <li class="lii"><a href="#home">Swap</a></li>
+                <li class="lii"><a href="#news">Liquidty</a></li>
+                <li class="lii"><a href="#contact">Pool</a></li>
+
+
+
+            </ul>
+        </div>
+        <button class="setIcons" style="background-color: transparent; border: none;">
+            <span class="material-icons " style="color: aliceblue">
+                settings
+            </span>
+        </button>
+
+
+        <!--üst alan yapısı  -->
+        <div class="row coin">
+            <div class="column1">
+                <div class="row">
+                    <div class="column">
+                        <div class="cards"><img src="assets/cronos.webp" alt="" class="src">
+                            <h1 id="current1">Crona</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="column2">
+                <input class="form-control form-control-lg textField justify-content-center" type="text" placeholder="0.0">
+            </div>
+
+
+        </div>
+
+        <!--icon  yapısı  -->
+        <button class="swap" style="background-color: transparent; border: none; align-items: center; margin-left: 11vh; margin-top: 5px"  onclick="transfer()">
+        <span class="material-icons" style="color: aliceblue; font-size: 48px;">
+            swap_vert
+        </span></button>
+        <!--alt alan yapısı  -->
+        <div class="row coin mt-2">
+            <div class="column1">
+                <div class="row">
+                    <div class="column">
+                        <div class="cards"><img src="assets/crona.webp" alt="" class="src">
+                            <h1 id="current2" >Cronos</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="column2">
+                <input class="form-control form-control-lg textField justify-content-center" type="number" placeholder="0.0">
+            </div>
+
+
+        </div>
+        <button class="btn btn-primary" onclick="clicked()">
+
+            <div class="connectWallet">
+                <h1 class="pt-2 " >Connect to a Wallet</h1>
+            </div>
+        </button>
+    </div>
+
+<script src="active.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body></html>
